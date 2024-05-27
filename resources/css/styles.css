@@ -4,11 +4,85 @@
 	box-sizing: border-box;
 }
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
+@font-face {
+	src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+	font-family: WorkSans;
 }
 
-.attribution a {
-	color: hsl(228, 45%, 44%);
+body {
+	display: flex;
+	flex-direction: column;
+	height: 150vh;
+	font-size: 16px;
+	color: hsl(292, 42%, 14%);
+	font-family: Tahoma;
+	background-color: hsl(275, 100%, 97%);
+}
+
+.hero-image {
+	position: absolute;
+	width: 100vw;
+}
+
+.main-container {
+	position: relative;
+	top: 25%;
+	transform: translateY(-25);
+	align-self: center;
+	font-family: WorkSans;
+	width: 600px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px hsl(292, 16%, 49%, 0.5);
+}
+
+.heading-row {
+	display: flex;
+	margin: 0 0 20px 0;
+	width: fit-content;
+}
+
+.heading-image {
+	width: 20px;
+	margin: 0 15px 0 0;
+}
+
+.faq-row {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin: 0 0 20px 0;
+}
+
+.faq-row-last {
+	margin: 0 0 0 0;
+}
+
+.question-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 10px 0;
+}
+
+.faq-question-text {
+	font-weight: 500;
+}
+
+.faq-image-button {
+	width: 15px;
+	cursor: pointer;
+}
+
+.plus-image {
+}
+
+.minus-image {
+	display: none; /*Removes minus button element in default state*/
+}
+
+.faq-answer-text {
+	color: hsl(292, 16%, 49%);
 }
