@@ -84,5 +84,6 @@ body {
 }
 
 .faq-answer-text {
+	display: none;
 	color: hsl(292, 16%, 49%);
 }
