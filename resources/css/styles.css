@@ -23,6 +23,11 @@ body {
 	position: absolute;
 	width: 100vw;
 }
+.hero-image-mobile {
+	position: absolute;
+	width: 100vw;
+	display: none;
+}
 
 .main-container {
 	position: relative;
@@ -68,7 +73,7 @@ body {
 }
 
 .faq-question-text {
-	font-weight: 500;
+	font-weight: 700;
 }
 
 .faq-image-button {
@@ -86,4 +91,18 @@ body {
 .faq-answer-text {
 	display: none;
 	color: hsl(292, 16%, 49%);
+}
+
+@media (max-width: 475px) {
+	.hero-image {
+		display: none;
+	}
+	.hero-image-mobile {
+		display: block;
+	}
+
+	.main-container {
+		top: 10%;
+		width: 90%;
+	}
 }
